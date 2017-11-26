@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="GiftChannelView" customModule="礼物通道" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="881" height="252"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23B-NP-kWT">
+                    <rect key="frame" x="0.0" y="0.0" width="609" height="252"/>
+                    <color key="backgroundColor" red="0.24337722079999999" green="0.032342572110000002" blue="0.046639758900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <viewLayoutGuide key="safeArea" id="egb-zT-y0r"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr4-eX-65q" customClass="GiftDigitLabel" customModule="礼物通道" customModuleProvider="target">
+                    <rect key="frame" x="619" y="10" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送出的礼物[飞机]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9s9-i1-3FI">
+                    <rect key="frame" x="262" y="232.5" width="95" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esd-bN-9dW">
+                    <rect key="frame" x="0.0" y="0.0" width="252" height="252"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="esd-bN-9dW" secondAttribute="height" multiplier="1:1" id="eDD-ge-t7E"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1O-w6-ZkE">
+                    <rect key="frame" x="357" y="0.0" width="252" height="252"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="S1O-w6-ZkE" secondAttribute="height" multiplier="1:1" id="Xrr-sl-txF"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coderWhy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8v-ie-sTL">
+                    <rect key="frame" x="262" y="5" width="53.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S1O-w6-ZkE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3IX-jT-AhK"/>
+                <constraint firstAttribute="bottom" secondItem="S1O-w6-ZkE" secondAttribute="bottom" id="3d1-je-6sF"/>
+                <constraint firstItem="S1O-w6-ZkE" firstAttribute="leading" secondItem="9s9-i1-3FI" secondAttribute="trailing" id="9GD-G6-4dj"/>
+                <constraint firstItem="23B-NP-kWT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9LF-5x-3hf"/>
+                <constraint firstItem="Xr4-eX-65q" firstAttribute="leading" secondItem="23B-NP-kWT" secondAttribute="trailing" constant="10" id="Hdz-Hi-3Jh"/>
+                <constraint firstItem="r8v-ie-sTL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="L37-4a-73L"/>
+                <constraint firstItem="esd-bN-9dW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OLH-Jx-8WF"/>
+                <constraint firstAttribute="bottom" secondItem="esd-bN-9dW" secondAttribute="bottom" id="Pls-WX-Bhv"/>
+                <constraint firstItem="Xr4-eX-65q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="QGK-51-Svk"/>
+                <constraint firstAttribute="bottom" secondItem="9s9-i1-3FI" secondAttribute="bottom" constant="5" id="X10-eu-i6l"/>
+                <constraint firstItem="r8v-ie-sTL" firstAttribute="leading" secondItem="esd-bN-9dW" secondAttribute="trailing" constant="10" id="Xv9-TQ-GTa"/>
+                <constraint firstItem="9s9-i1-3FI" firstAttribute="leading" secondItem="esd-bN-9dW" secondAttribute="trailing" constant="10" id="azM-UQ-YZf"/>
+                <constraint firstItem="esd-bN-9dW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ePz-Zw-s2r"/>
+                <constraint firstItem="23B-NP-kWT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oZ0-Ec-NSd"/>
+                <constraint firstItem="Xr4-eX-65q" firstAttribute="leading" secondItem="S1O-w6-ZkE" secondAttribute="trailing" constant="10" id="rhv-Bx-89b"/>
+                <constraint firstAttribute="bottom" secondItem="23B-NP-kWT" secondAttribute="bottom" id="wXv-jR-nQI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="23B-NP-kWT" id="qtf-Bc-T4u"/>
+                <outlet property="digitLabel" destination="Xr4-eX-65q" id="OT7-4H-2Gu"/>
+                <outlet property="giftDescLabel" destination="9s9-i1-3FI" id="NTW-pr-mA8"/>
+                <outlet property="giftImageView" destination="S1O-w6-ZkE" id="Rct-J4-TJF"/>
+                <outlet property="iconImageView" destination="esd-bN-9dW" id="Eeq-a5-QSH"/>
+                <outlet property="senderLabel" destination="r8v-ie-sTL" id="2Y1-fR-lrz"/>
+            </connections>
+            <point key="canvasLocation" x="1275" y="-318"/>
+        </view>
+    </objects>
+</document>
